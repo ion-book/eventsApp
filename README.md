@@ -1,1 +1,1 @@
-# eventsApp
+# meetupApp
