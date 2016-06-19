@@ -89,6 +89,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
   
-  $urlRouterProvider.otherwise('/tutorial');
+  $urlRouterProvider.otherwise('/tab/dash');
 
 });
