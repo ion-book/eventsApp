@@ -46,7 +46,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
-
   .state('tab.activity', {
     url: '/activity',
     views: {
@@ -55,7 +54,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
   .state('tab.calendar', {
     url: '/calendar',
     views: {
@@ -64,7 +62,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-
   .state('tab.messages', {
     url: '/messages',
     views: {
@@ -73,7 +70,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
-  
   .state('tab.profile', {
     url: '/profile',
     views: {
