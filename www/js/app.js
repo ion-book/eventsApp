@@ -77,7 +77,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'templates/tab-profile.html',
       }
     }
-  });
+  })
   
   $urlRouterProvider.otherwise('/tab/activity');
 
