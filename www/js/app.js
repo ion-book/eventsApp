@@ -70,6 +70,14 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.groups', {
+    url: '/groups',
+    views: {
+      'tab-groups': {
+        templateUrl: 'templates/tab-groups.html',
+      }
+    }
+  })
   .state('tab.profile', {
     url: '/profile',
     views: {
