@@ -1,7 +1,21 @@
-<ion-view view-title="Tutorial">
-  <ion-content class="padding">
-    <h1>Hola</h1>
-    <a href="#/login" class="button button-assertive">Ingresar</a>
+<ion-view view-title="Tutorial" hide-nav-bar="true">
+  <ion-content>
+    <img id="logo" src="img/ionic.png" alt="logo">
+    <ion-slides slider="slider">
+      <ion-slide-page class="page page-1">
+        <h2>Titulo 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </ion-slide-page>
+      <ion-slide-page class="page page-2">
+         <h2>Titulo 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </ion-slide-page>
+      <ion-slide-page class="page page-3">
+         <h2>Titulo 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <elit class=""></elit></p>
+      </ion-slide-page>
+    </ion-slides>
+    <a href="#/login" id="button-login" class="button button-assertive">Ingresar</a>
   </ion-content>
 </ion-view>
 
