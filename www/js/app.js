@@ -53,6 +53,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-activity': {
         templateUrl: 'templates/tab-activity.html',
+        controller: 'TabActivityCtrl'
       }
     }
   })

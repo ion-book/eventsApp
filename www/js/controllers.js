@@ -36,3 +36,28 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('TabActivityCtrl', function($scope, $state) {
+  
+  $scope.notifications = [
+    {
+      picture: 'img/adam.jpg',
+      name: 'Adam',
+      text: 'Ha agreado un evento',
+      date: new Date()
+    },
+    {
+      picture: 'img/ionic.png',
+      name: 'Hybrid Apps',
+      text: 'Anuncio un nuevo evento',
+      date: new Date()
+    },
+    {
+      picture: 'img/mike.png',
+      name: 'Mike',
+      text: 'Comento sobre un evento',
+      date: new Date()
+    }
+  ];
+  
+})
+
