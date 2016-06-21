@@ -1,6 +1,31 @@
 <ion-view view-title="Ingreso">
   <ion-content>
-    <h1>Ingreso</h1>
+    <div class="row">
+      <div class="col col-80 col-offset-10">
+        <button class="button icon-left ion-social-facebook button-positive button-block">
+          Facebook
+        </button>
+        <button class="button icon-left ion-social-twitter button-calm button-block">
+          Twitter
+        </button>
+      </div>
+    </div>
+    <h5 class="text-center">Ó</h5>
+    <form name="FormLogin" ng-submit="doLogin()">
+      <ion-list>
+        <label class="item item-input">
+          <input type="email" placeholder="Tu correo" ng-model="user.email" required>
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder="Tu contraseña" ng-model="user.password" required>
+        </label>
+      </ion-list>
+      <div class="padding">
+        <button type="submit" class="button button-block button-assertive" ng-disabled="FormLogin.$invalid">
+          Ingresar
+        </button>
+      </div>
+    </form>
   </ion-content>
 </ion-view>
 
