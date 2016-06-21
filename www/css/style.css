@@ -48,3 +48,9 @@
   color: #ef473a;
 }
 
+.groups .card{
+  margin: 0px;
+}
+.groups .list:last-child.card{
+  margin: 0px;
+}
