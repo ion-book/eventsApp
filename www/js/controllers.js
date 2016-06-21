@@ -91,7 +91,7 @@ angular.module('starter.controllers', [])
           name: 'Angular + Meteor',
           attendees: 331,
           check: false,
-          date: new Date(2016, 7, 21, 2)
+          date: new Date(2016, 7, 21, 16)
         },
       ]
     },

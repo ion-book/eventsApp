@@ -2,14 +2,14 @@
   <ion-content>
     <ion-list ng-repeat="date in dates">
       <ion-item class="item-divider">
-        {{ date.dateGroup | date: "short" }}
+        {{ date.dateGroup | date: "longDate" }}
       </ion-item>
       <ion-item 
       ng-repeat="event in date.events" 
       ng-class="{ 'check' : event.check }">
         <div class="row">
           <div class="col col-25">
-            <small>{{ event.time | date: "shortTime" }}</small>
+            <small>{{ event.date | date: "shortTime" }}</small>
             <p ng-show="event.check"><i class="icon ion-checkmark-circled"></i></p>
           </div>
           <div class="col col-75">
