@@ -33,7 +33,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   
   .state('tutorial', {
     url: '/tutorial',
-    templateUrl: 'templates/tutorial.html'
+    templateUrl: 'templates/tutorial.html',
+    controller: 'TutorialCtrl'
   })
   
   .state('login', {
