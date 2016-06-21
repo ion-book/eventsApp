@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
   
   $scope.doLogin = function(){
     console.log($scope.user);
-    if($scope.user.email == "nico@ni.co" && $scope.user.password == "123"){
+    if($scope.user.email == "nico@algo.co" && $scope.user.password == "123"){
       $state.go('tab.activity');
     }else{
       $scope.user.password = '';
