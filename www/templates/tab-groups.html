@@ -4,35 +4,13 @@
       TUS GRUPOS
     </ion-item>
     <div class="row">
-      <div class="col col-50">
+      <div class="col col-50" ng-repeat="group in groups">
         <ion-list type="card">
           <ion-item class="item-image">
-            <img src="img/1.jpeg" class="full-image" alt="">
+            <img ng-src="{{ group.image }}" class="full-image" alt="">
           </ion-item>
           <ion-item>
-            <h2>Hybrid Apps Colombia</h2>
-          </ion-item>
-        </ion-list>
-      </div>
-      <div class="col col-50">
-        <ion-list type="card">
-          <ion-item class="item-image">
-            <img src="img/2.jpeg" class="full-image" alt="">
-          </ion-item>
-          <ion-item>
-            <h2>Meteor Bogota</h2>
-          </ion-item>
-        </ion-list>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-50">
-        <ion-list type="card">
-          <ion-item class="item-image">
-            <img src="img/3.jpeg" class="full-image" alt="">
-          </ion-item>
-          <ion-item>
-            <h2>Django Bogota</h2>
+            <h2>{{ group.name }}</h2>
           </ion-item>
         </ion-list>
       </div>

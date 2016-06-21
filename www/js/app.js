@@ -79,6 +79,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-groups': {
         templateUrl: 'templates/tab-groups.html',
+        controller: 'TabGroupsCtrl'
       }
     }
   })

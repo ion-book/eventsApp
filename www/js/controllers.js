@@ -99,3 +99,18 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('TabGroupsCtrl', function($scope, $state) {
+  
+  $scope.groups = [
+    {
+      name: 'HybridAppsCol',
+      image: 'img/1.jpeg'
+    },
+    {
+      name: 'DjangoBogota',
+      image: 'img/2.jpeg'
+    }
+  ];
+  
+})
+
