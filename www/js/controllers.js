@@ -17,7 +17,7 @@ angular.module('starter.controllers', [])
   }
   
   $scope.goToTwitter = function(){
-    console.log('click en facebook');
+    console.log('click en twitter');
   }
   
   $scope.doLogin = function(){
