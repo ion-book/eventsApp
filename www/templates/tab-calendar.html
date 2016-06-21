@@ -1,44 +1,21 @@
 <ion-view view-title="Calendario">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-divider">Wednesday, Jun 22</ion-item>
-      <ion-item>
-        <div class="row">
-          <div class="col col-25">
-            <small>9:00 am</small>
-          </div>
-          <div class="col col-75">
-            <h4>DjangoBogota</h4>
-            <h2>Django REST</h2>
-            <p>201 Asistentes</p>
-          </div>
-        </div>
+    <ion-list ng-repeat="date in dates">
+      <ion-item class="item-divider">
+        {{ date.dateGroup | date: "short" }}
       </ion-item>
-      <ion-item class="check">
+      <ion-item 
+      ng-repeat="event in date.events" 
+      ng-class="{ 'check' : event.check }">
         <div class="row">
           <div class="col col-25">
-            <small>1:00 pm</small>
-            <p><i class="icon ion-checkmark-circled"></i></p>
+            <small>{{ event.time | date: "shortTime" }}</small>
+            <p ng-show="event.check"><i class="icon ion-checkmark-circled"></i></p>
           </div>
           <div class="col col-75">
-            <h4>Hybrid Apps</h4>
-            <h2>¿Que es crosswalk?</h2>
-            <p>189 Asistentes</p>
-          </div>
-        </div>
-      </ion-item>
-    </ion-list>
-    <ion-list>
-      <ion-item class="item-divider">Friday, Jun 24</ion-item>
-      <ion-item>
-        <div class="row">
-          <div class="col col-25">
-            <small>3:00 pm</small>
-          </div>
-          <div class="col col-75">
-            <h4>MeteorBogota</h4>
-            <h2>Meteor + Angular</h2>
-            <p>130 Asistentes</p>
+            <h4>{{ event.group }}</h4>
+            <h2>{{ event.name }}</h2>
+            <p>{{ event.attendees }} Asistentes</p>
           </div>
         </div>
       </ion-item>

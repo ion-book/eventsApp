@@ -62,6 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-calendar': {
         templateUrl: 'templates/tab-calendar.html',
+        controller: 'TabCalendarCtrl'
       }
     }
   })

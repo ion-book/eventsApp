@@ -61,3 +61,41 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('TabCalendarCtrl', function($scope, $state) {
+  
+  $scope.dates = [
+    {
+      dateGroup: new Date(2016, 7, 20),
+      events: [
+        {
+          group: 'HybridApps',
+          name: '¿Que es Crosswalk?',
+          attendees: 201,
+          check: false,
+          date: new Date(2016, 7, 20, 12)
+        },
+        {
+          group: 'DjangoBogota',
+          name: 'Django REST',
+          attendees: 101,
+          check: true,
+          date: new Date(2016, 7, 20, 13)
+        }
+      ]
+    },
+    {
+      dateGroup: new Date(2016, 7, 21),
+      events: [
+        {
+          group: 'MeteorBogota',
+          name: 'Angular + Meteor',
+          attendees: 331,
+          check: false,
+          date: new Date(2016, 7, 21, 2)
+        },
+      ]
+    },
+  ];
+  
+})
+
