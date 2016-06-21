@@ -2,30 +2,30 @@
   <ion-content>
     <div class="row">
       <div class="col col-80 col-offset-10">
-        <button ng-click="facebook()" 
+        <button 
         class="button icon-left ion-social-facebook button-positive button-block">
           Facebook
         </button>
-        <button ng-click="twitter()" 
+        <button
         class="button icon-left ion-social-twitter button-calm button-block">
           Twitter
         </button>
       </div>
     </div>
     <h5 class="text-center">Ó</h5>
-    <form name="FormLogin" ng-submit="doLogin()">
+    <form name="FormLogin">
       <ion-list>
         <label class="item item-input">
-          <input type="email" placeholder="Tu correo" ng-model="user.email" required>
+          <input type="email" placeholder="Tu correo" required>
         </label>
         <label class="item item-input">
-          <input type="password" placeholder="Tu contraseña" ng-model="user.password" required>
+          <input type="password" placeholder="Tu contraseña" required>
         </label>
       </ion-list>
       <div class="padding">
-        <button type="submit" class="button button-block button-assertive" ng-disabled="FormLogin.$invalid">
+        <a href="#/tab/activity" class="button button-block button-assertive">
           Ingresar
-        </button>
+        </a>
       </div>
     </form>
   </ion-content>
