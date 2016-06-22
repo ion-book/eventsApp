@@ -71,6 +71,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-messages': {
         templateUrl: 'templates/tab-messages.html',
+        controller: 'TabMessagesCtrl'
       }
     }
   })
