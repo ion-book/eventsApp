@@ -114,3 +114,28 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('TabMessagesCtrl', function($scope, $state) {
+  
+  $scope.messages = [
+    {
+      name: 'Perry',
+      image: 'img/perry.png',
+      text: 'Mensaje de prueba',
+      date: new Date()
+    },
+    {
+      name: 'Adam',
+      image: 'img/adam.jpg',
+      text: 'Mensaje de prueba',
+      date: new Date()
+    },
+    {
+      name: 'Mike',
+      image: 'img/mike.png',
+      text: 'Mensaje de prueba',
+      date: new Date()
+    }
+  ];
+  
+})
+
