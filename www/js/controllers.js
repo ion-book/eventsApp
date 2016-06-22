@@ -139,3 +139,14 @@ angular.module('starter.controllers', [])
   
 })
 
+.controller('TabProfileCtrl', function($scope, $state) {
+  
+  $scope.user = {
+    image: 'img/mike.png',
+    name: 'Mike',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto tempore facere dolores impedit illo veritatis rerum recusandae omnis, illum est, ab voluptatum sunt odit numquam soluta, doloribus nobis labore. Et!',
+    email: 'unmail@domain.co',
+    phone: '+57 312 345 3433'
+  };
+  
+})
